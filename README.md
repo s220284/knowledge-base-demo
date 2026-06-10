@@ -2,13 +2,13 @@
 
 A clickable static showcase of an enterprise knowledge base + customer intelligence platform.
 
-**Live demo:** _to be added after deployment_
+**Live demo:** https://s220284.github.io/knowledge-base-demo/
 
 ## What this is
 
 A high-fidelity walkthrough of what an enterprise-grade AI-powered knowledge base looks like, built around a fictional company called Acme Corporation. Everything you see — accounts, people, transcripts, drafts — is invented for illustration. No real data is referenced.
 
-The demo covers twelve screens spanning the major capabilities of an enterprise knowledge base system:
+The demo covers twelve+ screens spanning the major capabilities of an enterprise knowledge base system:
 
 1. **Dashboard** — KPIs, recent activity, pipeline at a glance
 2. **Knowledge Base** — chat interface with grounded citations
@@ -26,7 +26,7 @@ The demo covers twelve screens spanning the major capabilities of an enterprise 
 
 ## How to use
 
-Open `index.html` in a browser, or browse the deployed GitHub Pages URL. Every page is statically generated. No backend, no API calls, no authentication.
+Open the demo URL above, or browse the files locally — every page is fully static. No backend, no API calls, no authentication.
 
 The chat interface accepts input but responses are simulated for demo purposes.
 
@@ -52,6 +52,8 @@ The chat interface accepts input but responses are simulated for demo purposes.
     └── js/app.js           Shared shell, navigation, chat sim
 ```
 
-## License
+## Notes
 
-Demo content — no real-world data is represented. Use as illustration material only.
+- All data is fictional. Acme Corporation does not exist.
+- This is a clickable mockup, not a working application.
+- Designed as illustration material for explaining what is possible.
