@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Relationship Graph — Acme Corporation</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-active-nav="graph.html">
+<div class="app">
+  <div id="sidebar-slot"></div>
+  <main class="main">
+    <div class="breadcrumb">Customers › Relationship Graph</div>
+    <div class="page-header">
+      <div class="page-title-group">
+        <h1>Relationship Graph</h1>
+        <div class="page-subtitle">52,684 nodes · 318,000+ relationships · Connections discovered from email co-occurrence, calendar history, and CRM linkage</div>
+      </div>
+      <div class="row-flex">
+        <select class="select"><option>Centered on: Northwind Industries</option></select>
+        <button class="btn btn-secondary">Expand 2 hops</button>
+      </div>
+    </div>
+
+    <div class="card graph-canvas">
+      <svg viewBox="0 0 800 480" style="width:100%;height:480px">
+        <!-- edges first so they sit beneath nodes -->
+        <line x1="400" y1="240" x2="200" y2="120" stroke="#cbd5e1" stroke-width="1.5"/>
+        <line x1="400" y1="240" x2="600" y2="120" stroke="#cbd5e1" stroke-width="1.5"/>
+        <line x1="400" y1="240" x2="200" y2="360" stroke="#cbd5e1" stroke-width="1.5"/>
+        <line x1="400" y1="240" x2="600" y2="360" stroke="#cbd5e1" stroke-width="1.5"/>
+        <line x1="400" y1="240" x2="120" y2="240" stroke="#cbd5e1" stroke-width="1.5"/>
+        <line x1="400" y1="240" x2="680" y2="240" stroke="#cbd5e1" stroke-width="1.5"/>
+        <line x1="200" y1="120" x2="120" y2="240" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2 4"/>
+        <line x1="600" y1="120" x2="680" y2="240" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2 4"/>
+        <line x1="200" y1="360" x2="120" y2="240" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2 4"/>
+        <line x1="600" y1="360" x2="680" y2="240" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2 4"/>
+        <line x1="200" y1="120" x2="600" y2="120" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2 4"/>
+        <line x1="60" y1="180" x2="200" y2="120" stroke="#cbd5e1" stroke-width="1"/>
+        <line x1="60" y1="320" x2="200" y2="360" stroke="#cbd5e1" stroke-width="1"/>
+        <line x1="720" y1="180" x2="600" y2="120" stroke="#cbd5e1" stroke-width="1"/>
+        <line x1="720" y1="320" x2="600" y2="360" stroke="#cbd5e1" stroke-width="1"/>
+
+        <!-- center: account -->
+        <g>
+          <circle cx="400" cy="240" r="58" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+          <text x="400" y="232" text-anchor="middle" font-family="Inter" font-size="13" font-weight="600" fill="#0f172a">Northwind</text>
+          <text x="400" y="250" text-anchor="middle" font-family="Inter" font-size="11" fill="#475569">Industries</text>
+          <text x="400" y="268" text-anchor="middle" font-family="Inter" font-size="10" fill="#94a3b8">12,400 employees</text>
+        </g>
+
+        <!-- people (close) -->
+        <g>
+          <circle cx="200" cy="120" r="36" fill="#dbeafe" stroke="#2563eb"/>
+          <text x="200" y="118" text-anchor="middle" font-family="Inter" font-size="11" font-weight="600" fill="#0f172a">Hannah Voss</text>
+          <text x="200" y="132" text-anchor="middle" font-family="Inter" font-size="9" fill="#475569">CPO · Champion</text>
+        </g>
+        <g>
+          <circle cx="600" cy="120" r="36" fill="#d1fae5" stroke="#059669"/>
+          <text x="600" y="118" text-anchor="middle" font-family="Inter" font-size="11" font-weight="600" fill="#0f172a">Daniel Marsh</text>
+          <text x="600" y="132" text-anchor="middle" font-family="Inter" font-size="9" fill="#475569">EVP Ops</text>
+        </g>
+        <g>
+          <circle cx="200" cy="360" r="32" fill="#fef3c7" stroke="#d97706"/>
+          <text x="200" y="358" text-anchor="middle" font-family="Inter" font-size="10" font-weight="600" fill="#0f172a">L. Reinhardt</text>
+          <text x="200" y="372" text-anchor="middle" font-family="Inter" font-size="9" fill="#475569">Data Gov.</text>
+        </g>
+        <g>
+          <circle cx="600" cy="360" r="32" fill="#fef3c7" stroke="#d97706"/>
+          <text x="600" y="358" text-anchor="middle" font-family="Inter" font-size="10" font-weight="600" fill="#0f172a">Marco Theiler</text>
+          <text x="600" y="372" text-anchor="middle" font-family="Inter" font-size="9" fill="#475569">EMEA Ops</text>
+        </g>
+        <g>
+          <circle cx="120" cy="240" r="26" fill="#f1f5f9" stroke="#94a3b8"/>
+          <text x="120" y="244" text-anchor="middle" font-family="Inter" font-size="10" fill="#0f172a">Sven Kohler</text>
+          <text x="120" y="258" text-anchor="middle" font-family="Inter" font-size="9" fill="#475569">Legal</text>
+        </g>
+        <g>
+          <circle cx="680" cy="240" r="26" fill="#f1f5f9" stroke="#94a3b8"/>
+          <text x="680" y="244" text-anchor="middle" font-family="Inter" font-size="10" fill="#0f172a">A. Schultz</text>
+          <text x="680" y="258" text-anchor="middle" font-family="Inter" font-size="9" fill="#475569">Finance</text>
+        </g>
+
+        <!-- second hop: related companies -->
+        <g>
+          <circle cx="60" cy="180" r="22" fill="#e2e8f0" stroke="#94a3b8"/>
+          <text x="60" y="184" text-anchor="middle" font-family="Inter" font-size="9" fill="#0f172a">Polaris Mfg.</text>
+        </g>
+        <g>
+          <circle cx="60" cy="320" r="22" fill="#e2e8f0" stroke="#94a3b8"/>
+          <text x="60" y="324" text-anchor="middle" font-family="Inter" font-size="9" fill="#0f172a">Riverbend</text>
+        </g>
+        <g>
+          <circle cx="720" cy="180" r="22" fill="#e2e8f0" stroke="#94a3b8"/>
+          <text x="720" y="184" text-anchor="middle" font-family="Inter" font-size="9" fill="#0f172a">Vanguard</text>
+        </g>
+        <g>
+          <circle cx="720" cy="320" r="22" fill="#e2e8f0" stroke="#94a3b8"/>
+          <text x="720" y="324" text-anchor="middle" font-family="Inter" font-size="9" fill="#0f172a">Summit Energy</text>
+        </g>
+      </svg>
+    </div>
+
+    <div class="section-gap grid grid-2">
+      <div class="card">
+        <div class="card-header"><div class="card-title">Highest-density paths</div></div>
+        <ul class="list-tight">
+          <li class="list-item"><span class="badge badge-blue">Path</span><div><div class="list-title">Northwind → Hannah Voss → Polaris Manufacturing (Erika Schmidt)</div><div class="list-meta">Hannah and Erika worked together at Globex 2018-2022. Likely warm introduction path.</div></div></li>
+          <li class="list-item"><span class="badge badge-blue">Path</span><div><div class="list-title">Northwind → Daniel Marsh → Vanguard Retail (Aiden Walker)</div><div class="list-meta">Both attended SAP Sapphire 2025; calendar overlap on 4 industry events.</div></div></li>
+          <li class="list-item"><span class="badge badge-blue">Path</span><div><div class="list-title">Northwind → Laura Reinhardt → Driftwood Pharma (Dr. Hayes)</div><div class="list-meta">Both serve on the EU Data Compliance Working Group steering committee.</div></div></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><div class="card-title">Mutual connections (suggested intros)</div></div>
+        <ul class="list-tight">
+          <li class="list-item"><div class="avatar" style="background:linear-gradient(135deg,#2563eb,#1e40af)">HV</div><div><div class="list-title">Hannah Voss could introduce us at Polaris Manufacturing</div><div class="list-meta">She references Erika Schmidt in 6 emails as a former colleague. Mutual trust signal: high.</div></div></li>
+          <li class="list-item"><div class="avatar" style="background:linear-gradient(135deg,#059669,#047857)">DM</div><div><div class="list-title">Daniel Marsh could open doors at Vanguard Retail Co</div><div class="list-meta">Co-presenter at industry conference Q4 2025. Public LinkedIn endorsement.</div></div></li>
+        </ul>
+      </div>
+    </div>
+
+  </main>
+</div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

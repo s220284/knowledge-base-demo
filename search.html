@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Search — Acme Corporation Knowledge Base</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-active-nav="search.html">
+<div class="app">
+  <div id="sidebar-slot"></div>
+  <main class="main">
+    <div class="breadcrumb">Workspace › Search</div>
+    <div class="page-header">
+      <div class="page-title-group">
+        <h1>Hybrid Search</h1>
+        <div class="page-subtitle">Vector + keyword search across 1.4M chunks from 47 connected sources. Reranked for relevance.</div>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <div class="toolbar-left">
+        <input class="input" style="min-width:480px" value="data residency requirements Northwind EMEA" />
+        <select class="select"><option>Source: All</option><option>Email</option><option>Transcripts</option><option>Documents</option></select>
+        <select class="select"><option>Last 90 days</option><option>Last 30 days</option><option>All time</option></select>
+      </div>
+      <div class="toolbar-right">
+        <button class="btn btn-secondary">Save search</button>
+      </div>
+    </div>
+
+    <div class="toolbar" style="margin-bottom:12px">
+      <div class="muted text-sm">14 results · 0.3s · weighting: 70% vector / 30% keyword · reranked with cross-encoder</div>
+    </div>
+
+    <div class="search-results">
+      <div class="result-card">
+        <div class="result-title">QBR Transcript — Northwind Industries · March 14, 2026</div>
+        <div class="result-meta">
+          <span class="badge badge-grey">Transcript</span>
+          <span class="muted" style="margin-left:8px">Source: Granola · Speakers: Hannah Voss, Daniel Marsh, Alex Chen</span>
+          <span class="score-bar" style="margin-left:12px">vector <span class="score-pill">0.91</span> keyword <span class="score-pill">0.84</span> final <span class="score-pill">0.93</span></span>
+        </div>
+        <div class="result-snippet">
+          …Hannah: "The <mark>data residency</mark> piece is non-negotiable for the <mark>EU</mark> operating units. We need clean separation of <mark>EMEA</mark>-originated data with audit trails we can hand to our DPO. The commercial uplift is fine if the technical architecture is solid…" Daniel added that the <mark>residency</mark> requirement is now a standard procurement gate at <mark>Northwind</mark> for any contract over $500K…
+        </div>
+      </div>
+
+      <div class="result-card">
+        <div class="result-title">Email — Hannah Voss → Daniel Marsh · March 16, 2026</div>
+        <div class="result-meta">
+          <span class="badge badge-grey">Email</span>
+          <span class="muted" style="margin-left:8px">Subject: "Audit trail follow-up — residency rider"</span>
+          <span class="score-bar" style="margin-left:12px">vector <span class="score-pill">0.88</span> keyword <span class="score-pill">0.92</span> final <span class="score-pill">0.91</span></span>
+        </div>
+        <div class="result-snippet">
+          …As discussed Friday, I'd like the technical architecture review for the <mark>data residency</mark> rider on the <mark>Northwind</mark> contract scheduled by April 8 at the latest. Our DPO will need to confirm the <mark>EMEA</mark> audit-trail design before legal can finalize the addendum…
+        </div>
+      </div>
+
+      <div class="result-card">
+        <div class="result-title">Contract — Northwind Annual Renewal 2026 · Section 12.3</div>
+        <div class="result-meta">
+          <span class="badge badge-grey">Document</span>
+          <span class="muted" style="margin-left:8px">Source: Drive · Last modified: Mar 14 · 47 pages</span>
+          <span class="score-bar" style="margin-left:12px">vector <span class="score-pill">0.78</span> keyword <span class="score-pill">0.95</span> final <span class="score-pill">0.87</span></span>
+        </div>
+        <div class="result-snippet">
+          …Section 12.3 (Data Residency Rider): All Customer Data originating from <mark>EMEA</mark> operating units shall be stored, processed, and replicated solely within the European Economic Area. Provider shall make available to Customer's Data Protection Officer a quarterly audit trail showing <mark>residency</mark> compliance…
+        </div>
+      </div>
+
+      <div class="result-card">
+        <div class="result-title">Industry Note — EU Commission data residency review</div>
+        <div class="result-meta">
+          <span class="badge badge-grey">External news</span>
+          <span class="muted" style="margin-left:8px">Source: Industry feed · Published: Mar 15</span>
+          <span class="score-bar" style="margin-left:12px">vector <span class="score-pill">0.82</span> keyword <span class="score-pill">0.74</span> final <span class="score-pill">0.81</span></span>
+        </div>
+        <div class="result-snippet">
+          …The European Commission opened a formal review on extraterritorial <mark>data residency requirements</mark> that could affect cross-border data flows for several major US technology providers. The review is expected to conclude in late 2026…
+        </div>
+      </div>
+
+      <div class="result-card">
+        <div class="result-title">Email — Daniel Marsh → Legal Team · February 22, 2026</div>
+        <div class="result-meta">
+          <span class="badge badge-grey">Email</span>
+          <span class="muted" style="margin-left:8px">Subject: "Northwind renewal — please review residency language"</span>
+          <span class="score-bar" style="margin-left:12px">vector <span class="score-pill">0.76</span> keyword <span class="score-pill">0.81</span> final <span class="score-pill">0.79</span></span>
+        </div>
+        <div class="result-snippet">
+          …Northwind's procurement team has indicated that the <mark>data residency</mark> language in our standard MSA needs additional specificity for the <mark>EMEA</mark> rider. Please review and propose revised language by Mar 5…
+        </div>
+      </div>
+
+      <div class="result-card">
+        <div class="result-title">QBR Transcript — Crescent Media · February 8, 2026</div>
+        <div class="result-meta">
+          <span class="badge badge-grey">Transcript</span>
+          <span class="muted" style="margin-left:8px">Source: Granola · Speakers: Lisa Park, Michael Santos</span>
+          <span class="score-bar" style="margin-left:12px">vector <span class="score-pill">0.73</span> keyword <span class="score-pill">0.62</span> final <span class="score-pill">0.71</span></span>
+        </div>
+        <div class="result-snippet">
+          …Lisa: "We've been hearing the same <mark>data residency</mark> question from procurement at three of our biggest accounts now. <mark>Northwind</mark> first, then Brightwater, now Crescent. We should standardize the answer before the next renewal cycle…"
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Data Sources — Acme Corporation</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-active-nav="sources.html">
+<div class="app">
+  <div id="sidebar-slot"></div>
+  <main class="main">
+    <div class="breadcrumb">Operations › Data Sources</div>
+    <div class="page-header">
+      <div class="page-title-group">
+        <h1>Data Sources</h1>
+        <div class="page-subtitle">47 connected systems · 1.4M indexed chunks · 1,847 ingestion runs in the last 30 days</div>
+      </div>
+      <div class="row-flex">
+        <button class="btn btn-primary">+ Connect source</button>
+      </div>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="kpi-label">Connected Systems</div><div class="kpi-value">47</div><div class="kpi-trend up">▲ 3 last quarter</div></div>
+      <div class="kpi-card"><div class="kpi-label">Indexed Chunks</div><div class="kpi-value">1.4M</div><div class="kpi-trend up">▲ 84K last 30d</div></div>
+      <div class="kpi-card"><div class="kpi-label">Ingestion Health</div><div class="kpi-value" style="font-size:20px;color:var(--success)">All Green</div><div class="kpi-trend flat">0 failed runs / 24h</div></div>
+      <div class="kpi-card"><div class="kpi-label">Storage</div><div class="kpi-value">8.2 GB</div><div class="kpi-trend flat">Vector + metadata</div></div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><div class="card-title">Connected sources</div></div>
+      <table class="table">
+        <thead><tr><th>Source</th><th>Type</th><th class="num">Documents</th><th>Last sync</th><th>Cadence</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>📧 Gmail (workspace)</td><td>Email</td><td class="num">487,294</td><td>3 min ago</td><td>Continuous</td><td><span class="badge badge-green">Healthy</span></td></tr>
+          <tr><td>📅 Google Calendar</td><td>Events</td><td class="num">38,419</td><td>5 min ago</td><td>Continuous</td><td><span class="badge badge-green">Healthy</span></td></tr>
+          <tr><td>📁 Google Drive</td><td>Documents</td><td class="num">112,084</td><td>22 min ago</td><td>Hourly</td><td><span class="badge badge-green">Healthy</span></td></tr>
+          <tr><td>🎙 Granola</td><td>Meeting transcripts</td><td class="num">3,728</td><td>14 min ago</td><td>Every 30m</td><td><span class="badge badge-green">Healthy</span></td></tr>
+          <tr><td>💬 Slack</td><td>Channels + DMs</td><td class="num">218,476</td><td>8 min ago</td><td>Continuous</td><td><span class="badge badge-green">Healthy</span></td></tr>
+          <tr><td>🤝 Salesforce</td><td>CRM</td><td class="num">147,810</td><td>1 hour ago</td><td>Hourly</td><td><span class="badge badge-green">Healthy</span></td></tr>
+          <tr><td>🛟 Zendesk</td><td>Support tickets</td><td class="num">38,201</td><td>2 hours ago</td><td>Every 2h</td><td><span class="badge badge-green">Healthy</span></td></tr>
+          <tr><td>📊 Tableau Server</td><td>Reports + dashboards</td><td class="num">4,210</td><td>6 hours ago</td><td>Daily</td><td><span class="badge badge-green">Healthy</span></td></tr>
+          <tr><td>📈 Snowflake</td><td>Data warehouse</td><td class="num">— (live)</td><td>Live</td><td>On query</td><td><span class="badge badge-green">Healthy</span></td></tr>
+          <tr><td>🌐 Confluence</td><td>Wiki / documentation</td><td class="num">7,138</td><td>4 hours ago</td><td>Every 4h</td><td><span class="badge badge-green">Healthy</span></td></tr>
+          <tr><td>🐙 GitHub</td><td>Code + issues</td><td class="num">18,294</td><td>11 min ago</td><td>Every 15m</td><td><span class="badge badge-green">Healthy</span></td></tr>
+          <tr><td>📩 Mailchimp</td><td>Email engagement</td><td class="num">28,513</td><td>1 day ago</td><td>Daily</td><td><span class="badge badge-green">Healthy</span></td></tr>
+          <tr><td>📰 Industry feeds (RSS)</td><td>External news</td><td class="num">142,718</td><td>22 min ago</td><td>Every 30m</td><td><span class="badge badge-green">Healthy</span></td></tr>
+          <tr><td>🔗 LinkedIn enrichment</td><td>Contact enrichment</td><td class="num">52,684</td><td>2 days ago</td><td>Weekly</td><td><span class="badge badge-amber">Rate-limited</span></td></tr>
+          <tr><td>📞 Gong</td><td>Call recordings</td><td class="num">2,847</td><td>3 hours ago</td><td>Every 4h</td><td><span class="badge badge-green">Healthy</span></td></tr>
+          <tr><td>📃 DocuSign</td><td>Contracts</td><td class="num">1,920</td><td>1 day ago</td><td>Daily</td><td><span class="badge badge-green">Healthy</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+</div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

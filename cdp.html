@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Customer Data — Acme Corporation</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-active-nav="cdp.html">
+<div class="app">
+  <div id="sidebar-slot"></div>
+  <main class="main">
+    <div class="breadcrumb">Customers › Customer Data Platform</div>
+    <div class="page-header">
+      <div class="page-title-group">
+        <h1>Customer Data Platform</h1>
+        <div class="page-subtitle">Engagement scoring · Dynamic segmentation · Lifecycle automation · Identity resolution</div>
+      </div>
+      <div class="row-flex">
+        <button class="btn btn-secondary">Run scoring job</button>
+        <button class="btn btn-primary">+ New segment</button>
+      </div>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="kpi-label">Scored Profiles</div><div class="kpi-value">11,041</div><div class="kpi-trend up">▲ 412 last run</div></div>
+      <div class="kpi-card"><div class="kpi-label">Active Segments</div><div class="kpi-value">28</div><div class="kpi-trend flat">3 dynamic, 25 static</div></div>
+      <div class="kpi-card"><div class="kpi-label">Triggers Fired (7d)</div><div class="kpi-value">147</div><div class="kpi-trend up">▲ 22% WoW</div></div>
+      <div class="kpi-card"><div class="kpi-label">Identity Merges</div><div class="kpi-value">2,310</div><div class="kpi-trend up">▲ 84 this week</div></div>
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="card-header"><div class="card-title">Lifecycle distribution</div><span class="card-subtitle">11,041 profiles</span></div>
+        <div class="donut-wrap">
+          <div class="donut" style="background:conic-gradient(var(--accent) 0% 26%, var(--success) 26% 64%, var(--warning) 64% 84%, var(--ink-3) 84% 100%)"><div class="donut-inner">11K</div></div>
+          <div class="donut-legend">
+            <div><span class="legend-dot" style="background:var(--accent)"></span> Champion (26% · 2,870)</div>
+            <div><span class="legend-dot" style="background:var(--success)"></span> Active (38% · 4,196)</div>
+            <div><span class="legend-dot" style="background:var(--warning)"></span> At Risk (20% · 2,208)</div>
+            <div><span class="legend-dot" style="background:var(--ink-3)"></span> Dormant (16% · 1,767)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><div class="card-title">Engagement score distribution</div><span class="card-subtitle">0–100 scale</span></div>
+        <div class="bar-chart" style="height:140px">
+          <div class="bar" style="height:18%;background:var(--ink-3)"></div>
+          <div class="bar" style="height:34%;background:var(--ink-3)"></div>
+          <div class="bar" style="height:48%;background:var(--warning)"></div>
+          <div class="bar" style="height:62%;background:var(--warning)"></div>
+          <div class="bar" style="height:84%;background:var(--success)"></div>
+          <div class="bar" style="height:96%;background:var(--success)"></div>
+          <div class="bar" style="height:78%;background:var(--accent)"></div>
+          <div class="bar" style="height:54%;background:var(--accent)"></div>
+          <div class="bar" style="height:38%;background:var(--accent)"></div>
+          <div class="bar" style="height:24%;background:var(--accent-dark)"></div>
+        </div>
+        <div class="bar-labels"><span>0-10</span><span>10-20</span><span>20-30</span><span>30-40</span><span>40-50</span><span>50-60</span><span>60-70</span><span>70-80</span><span>80-90</span><span>90+</span></div>
+      </div>
+    </div>
+
+    <div class="section-gap card">
+      <div class="card-header">
+        <div class="card-title">Active segments</div>
+        <a class="card-link">Manage all segments →</a>
+      </div>
+      <table class="table">
+        <thead><tr><th>Segment</th><th>Definition</th><th class="num">Members</th><th>Refresh</th><th>Triggers</th><th>Owner</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Champions in EMEA</strong></td><td class="muted text-xs">lifecycle=Champion AND geo IN (UK,DE,FR,NL,ES,IT)</td><td class="num">412</td><td><span class="badge badge-green">Dynamic</span></td><td>Quarterly executive outreach</td><td>Sarah J.</td></tr>
+          <tr><td><strong>At-risk enterprise accounts</strong></td><td class="muted text-xs">lifecycle=At Risk AND segment=Enterprise AND last_touch &gt; 14d</td><td class="num">87</td><td><span class="badge badge-green">Dynamic</span></td><td>Save-motion playbook</td><td>Sarah J.</td></tr>
+          <tr><td><strong>Q2 renewal cohort</strong></td><td class="muted text-xs">contract_end_date BETWEEN Apr 1 and Jun 30, 2026</td><td class="num">34</td><td><span class="badge badge-green">Dynamic</span></td><td>Pre-renewal QBR cadence</td><td>Marcus W.</td></tr>
+          <tr><td><strong>Manufacturing decision-makers</strong></td><td class="muted text-xs">industry=Manufacturing AND seniority IN (C-Level,VP)</td><td class="num">1,247</td><td><span class="badge badge-grey">Static · Mar 14</span></td><td>—</td><td>Priya P.</td></tr>
+          <tr><td><strong>Recently activated champions</strong></td><td class="muted text-xs">lifecycle changed TO Champion in last 30d</td><td class="num">47</td><td><span class="badge badge-green">Dynamic</span></td><td>Welcome-to-champion gift</td><td>Lisa P.</td></tr>
+          <tr><td><strong>APAC expansion targets</strong></td><td class="muted text-xs">parent_account.segment=Enterprise AND geo_apac=true AND no_active_contract</td><td class="num">192</td><td><span class="badge badge-green">Dynamic</span></td><td>Outbound discovery sequence</td><td>Daniel R.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section-gap grid grid-2">
+      <div class="card">
+        <div class="card-header"><div class="card-title">Recent trigger activity</div></div>
+        <ul class="list-tight">
+          <li class="list-item"><span class="badge badge-amber">3 min ago</span><div><div class="list-title">Brightwater Partners — At-Risk threshold crossed</div><div class="list-meta">Engagement score dropped from 64 → 52 after 21-day no-touch period. Save-motion assigned to Sarah Johnson.</div></div></li>
+          <li class="list-item"><span class="badge badge-green">11 min ago</span><div><div class="list-title">Hannah Voss promoted to Champion</div><div class="list-meta">Three executive-sponsor touches in 30 days triggered lifecycle promotion.</div></div></li>
+          <li class="list-item"><span class="badge badge-blue">38 min ago</span><div><div class="list-title">Q2 renewal cohort refreshed</div><div class="list-meta">Cascade Financial moved out (contract extended). Two new accounts added.</div></div></li>
+          <li class="list-item"><span class="badge badge-green">2 hr ago</span><div><div class="list-title">Identity merge: Hannah Voss profiles consolidated</div><div class="list-meta">Three distinct records (CRM, calendar enrichment, LinkedIn) merged with 98% confidence.</div></div></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><div class="card-title">Dedup queue</div><span class="card-subtitle">94 candidates · 12 awaiting review</span></div>
+        <ul class="list-tight">
+          <li class="list-item"><div class="avatar" style="background:var(--ink-3)">94%</div><div><div class="list-title">Daniel Marsh vs. D. Marsh, EVP</div><div class="list-meta">Same employer (Northwind), email overlap, calendar co-occurrence.</div></div></li>
+          <li class="list-item"><div class="avatar" style="background:var(--ink-3)">88%</div><div><div class="list-title">Robert Patel MD vs. Dr. Bob Patel</div><div class="list-meta">Title variant, employer match, signature block parsed identically.</div></div></li>
+          <li class="list-item"><div class="avatar" style="background:var(--ink-3)">82%</div><div><div class="list-title">Linda Park vs. L. Park</div><div class="list-meta">Same role, different email format. Review recommended before auto-merge.</div></div></li>
+        </ul>
+      </div>
+    </div>
+
+  </main>
+</div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Accounts — Acme Corporation</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-active-nav="accounts.html">
+<div class="app">
+  <div id="sidebar-slot"></div>
+  <main class="main">
+    <div class="breadcrumb">Customers › Accounts</div>
+    <div class="page-header">
+      <div class="page-title-group">
+        <h1>Accounts</h1>
+        <div class="page-subtitle">147 active accounts · $42.8M open pipeline · Updated continuously from CRM, email, and transcripts</div>
+      </div>
+      <div class="row-flex">
+        <button class="btn btn-secondary">Export</button>
+        <button class="btn btn-primary">+ Add account</button>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <div class="toolbar-left">
+        <input class="input" placeholder="Search accounts, contacts, industries…" />
+        <select class="select"><option>All segments</option><option>Enterprise</option><option>Mid-market</option><option>SMB</option></select>
+        <select class="select"><option>All lifecycle</option><option>Champion</option><option>Active</option><option>At Risk</option><option>Dormant</option></select>
+        <select class="select"><option>All owners</option></select>
+      </div>
+      <div class="toolbar-right muted text-sm">Sorted by engagement score, descending</div>
+    </div>
+
+    <div class="table-wrap">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Account</th>
+            <th>Segment</th>
+            <th>Lifecycle</th>
+            <th>Engagement</th>
+            <th class="num">Pipeline</th>
+            <th class="num">Last touch</th>
+            <th>Owner</th>
+            <th>Champion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><a href="account.html"><strong>Northwind Industries</strong></a><div class="text-xs muted">Manufacturing · 12,400 employees</div></td><td>Enterprise</td><td><span class="badge badge-blue">Champion</span></td><td class="mono">94</td><td class="num">$3.2M</td><td class="num">2 days ago</td><td>Sarah Johnson</td><td>Hannah Voss</td></tr>
+          <tr><td><strong>Helix Logistics</strong><div class="text-xs muted">Logistics · 8,200 employees</div></td><td>Enterprise</td><td><span class="badge badge-blue">Champion</span></td><td class="mono">91</td><td class="num">$1.8M</td><td class="num">Yesterday</td><td>Priya Patel</td><td>Carlos Mendez</td></tr>
+          <tr><td><strong>Aurora Technologies</strong><div class="text-xs muted">Software · 5,100 employees</div></td><td>Enterprise</td><td><span class="badge badge-green">Active</span></td><td class="mono">88</td><td class="num">$2.4M</td><td class="num">3 days ago</td><td>Marcus Williams</td><td>Olivia Bryant</td></tr>
+          <tr><td><strong>Meridian Health Group</strong><div class="text-xs muted">Healthcare · 22,000 employees</div></td><td>Enterprise</td><td><span class="badge badge-green">Active</span></td><td class="mono">82</td><td class="num">$4.1M</td><td class="num">4 days ago</td><td>Emma Thompson</td><td>Dr. Robert Patel</td></tr>
+          <tr><td><strong>Cascade Financial</strong><div class="text-xs muted">Financial Services · 9,800 employees</div></td><td>Enterprise</td><td><span class="badge badge-amber">At Risk</span></td><td class="mono">71</td><td class="num">$2.1M</td><td class="num">2 weeks ago</td><td>Daniel Rodriguez</td><td>Anita Krishnan</td></tr>
+          <tr><td><strong>Crescent Media</strong><div class="text-xs muted">Media · 4,600 employees</div></td><td>Mid-market</td><td><span class="badge badge-green">Active</span></td><td class="mono">79</td><td class="num">$1.4M</td><td class="num">6 days ago</td><td>Lisa Park</td><td>James Chen</td></tr>
+          <tr><td><strong>Polaris Manufacturing</strong><div class="text-xs muted">Manufacturing · 6,300 employees</div></td><td>Enterprise</td><td><span class="badge badge-amber">At Risk</span></td><td class="mono">68</td><td class="num">$1.9M</td><td class="num">3 weeks ago</td><td>Marcus Williams</td><td>Erika Schmidt</td></tr>
+          <tr><td><strong>Brightwater Partners</strong><div class="text-xs muted">Consulting · 1,800 employees</div></td><td>Mid-market</td><td><span class="badge badge-red">At Risk</span></td><td class="mono">52</td><td class="num">$680K</td><td class="num">3+ weeks</td><td>Sarah Johnson</td><td>—</td></tr>
+          <tr><td><strong>Driftwood Pharmaceuticals</strong><div class="text-xs muted">Pharma · 11,200 employees</div></td><td>Enterprise</td><td><span class="badge badge-green">Active</span></td><td class="mono">76</td><td class="num">$3.4M</td><td class="num">1 week ago</td><td>Sophia Nguyen</td><td>Dr. William Hayes</td></tr>
+          <tr><td><strong>Summit Energy</strong><div class="text-xs muted">Energy · 7,400 employees</div></td><td>Enterprise</td><td><span class="badge badge-green">Active</span></td><td class="mono">74</td><td class="num">$1.7M</td><td class="num">5 days ago</td><td>Michael Santos</td><td>Rebecca Hall</td></tr>
+          <tr><td><strong>Whitestone Insurance</strong><div class="text-xs muted">Insurance · 13,500 employees</div></td><td>Enterprise</td><td><span class="badge badge-green">Active</span></td><td class="mono">81</td><td class="num">$2.8M</td><td class="num">2 days ago</td><td>Sarah Johnson</td><td>Marcus Reeves</td></tr>
+          <tr><td><strong>Riverbend Foods</strong><div class="text-xs muted">CPG · 18,000 employees</div></td><td>Enterprise</td><td><span class="badge badge-green">Active</span></td><td class="mono">77</td><td class="num">$1.6M</td><td class="num">1 week ago</td><td>Priya Patel</td><td>Linda Park</td></tr>
+          <tr><td><strong>Vanguard Retail Co</strong><div class="text-xs muted">Retail · 24,000 employees</div></td><td>Enterprise</td><td><span class="badge badge-blue">Champion</span></td><td class="mono">86</td><td class="num">$3.7M</td><td class="num">3 days ago</td><td>Daniel Rodriguez</td><td>Aiden Walker</td></tr>
+          <tr><td><strong>Globex Corporation</strong><div class="text-xs muted">Conglomerate · 38,000 employees</div></td><td>Enterprise</td><td><span class="badge badge-green">Active</span></td><td class="mono">73</td><td class="num">$2.2M</td><td class="num">2 weeks ago</td><td>Lisa Park</td><td>Theresa Holm</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="toolbar" style="margin-top:16px">
+      <div class="muted text-sm">Showing 14 of 147 accounts</div>
+      <div class="toolbar-right">
+        <button class="btn btn-ghost">Previous</button>
+        <button class="btn btn-secondary">Next</button>
+      </div>
+    </div>
+
+  </main>
+</div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

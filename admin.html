@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin — Acme Corporation</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-active-nav="admin.html">
+<div class="app">
+  <div id="sidebar-slot"></div>
+  <main class="main">
+    <div class="breadcrumb">Operations › Admin</div>
+    <div class="page-header">
+      <div class="page-title-group">
+        <h1>Admin & Governance</h1>
+        <div class="page-subtitle">User access · Role assignments · Audit logs · Model & vendor governance · SSO, SCIM, data residency</div>
+      </div>
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="card-header"><div class="card-title">Users (24 seats)</div><a class="card-link">Manage all →</a></div>
+        <table class="table">
+          <thead><tr><th>User</th><th>Role</th><th>Last active</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Alex Chen</strong><div class="text-xs muted">Head of Insights</div></td><td><span class="badge badge-blue">Admin</span></td><td class="num">Just now</td></tr>
+            <tr><td><strong>Sarah Johnson</strong><div class="text-xs muted">Director, Accounts</div></td><td><span class="badge badge-blue">Admin</span></td><td class="num">12 min ago</td></tr>
+            <tr><td><strong>Marcus Williams</strong><div class="text-xs muted">VP, Customer Success</div></td><td><span class="badge badge-grey">Editor</span></td><td class="num">2 hours ago</td></tr>
+            <tr><td><strong>Priya Patel</strong><div class="text-xs muted">Senior Manager, Strategy</div></td><td><span class="badge badge-grey">Editor</span></td><td class="num">38 min ago</td></tr>
+            <tr><td><strong>Daniel Rodriguez</strong><div class="text-xs muted">Director, Sales Engineering</div></td><td><span class="badge badge-grey">Editor</span></td><td class="num">3 hours ago</td></tr>
+            <tr><td><strong>Emma Thompson</strong><div class="text-xs muted">Analyst</div></td><td><span class="badge badge-grey">Viewer</span></td><td class="num">Yesterday</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><div class="card-title">Model & vendor governance</div></div>
+        <table class="table">
+          <thead><tr><th>Capability</th><th>Vendor</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Primary LLM (synthesis)</td><td>Anthropic Claude</td><td><span class="badge badge-green">Approved</span></td></tr>
+            <tr><td>Secondary LLM (fallback)</td><td>OpenAI GPT</td><td><span class="badge badge-green">Approved</span></td></tr>
+            <tr><td>Reasoning model (long tasks)</td><td>Anthropic Claude (Opus)</td><td><span class="badge badge-green">Approved</span></td></tr>
+            <tr><td>Embedding model</td><td>OpenAI text-embedding-3-small</td><td><span class="badge badge-green">Approved</span></td></tr>
+            <tr><td>Reranker</td><td>Cohere</td><td><span class="badge badge-green">Approved</span></td></tr>
+            <tr><td>Vector database</td><td>PostgreSQL + pgvector</td><td><span class="badge badge-green">Approved</span></td></tr>
+            <tr><td>Image generation</td><td>—</td><td><span class="badge badge-grey">Not enabled</span></td></tr>
+            <tr><td>Code generation</td><td>Internal use only</td><td><span class="badge badge-amber">Internal-only</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section-gap grid grid-2">
+      <div class="card">
+        <div class="card-header"><div class="card-title">Audit log</div><span class="card-subtitle">Last 24 hours</span></div>
+        <ul class="list-tight">
+          <li class="list-item"><span class="badge badge-grey">14:22</span><div><div class="list-title">Sarah Johnson approved 4 email drafts</div><div class="list-meta">Drafts ranged across Northwind, Polaris, Brightwater accounts.</div></div></li>
+          <li class="list-item"><span class="badge badge-grey">11:47</span><div><div class="list-title">Alex Chen added Cohere reranker to approved model list</div><div class="list-meta">Change required vendor review approval (logged).</div></div></li>
+          <li class="list-item"><span class="badge badge-grey">10:38</span><div><div class="list-title">Marcus Williams created segment: APAC expansion targets</div><div class="list-meta">Definition includes 192 accounts. Reviewable in CDP.</div></div></li>
+          <li class="list-item"><span class="badge badge-grey">09:21</span><div><div class="list-title">System: daily eval run completed</div><div class="list-meta">150 questions scored. Quality 93.5% (up from 92.1%).</div></div></li>
+          <li class="list-item"><span class="badge badge-grey">06:00</span><div><div class="list-title">System: morning brief generated and distributed</div><div class="list-meta">7 stories, 24 sources. Delivered to 14 recipients.</div></div></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><div class="card-title">Compliance & residency</div></div>
+        <ul class="list-tight">
+          <li class="list-item"><span class="badge badge-green">✓</span><div><div class="list-title">SSO (Okta SAML 2.0)</div><div class="list-meta">All 24 users provisioned via SCIM. Last sync: 11 min ago.</div></div></li>
+          <li class="list-item"><span class="badge badge-green">✓</span><div><div class="list-title">SOC 2 Type II</div><div class="list-meta">Annual audit complete. Last attestation: Feb 2026.</div></div></li>
+          <li class="list-item"><span class="badge badge-green">✓</span><div><div class="list-title">Data residency: US + EU</div><div class="list-meta">EMEA-originated data stored separately. Audit trail available for DPO review.</div></div></li>
+          <li class="list-item"><span class="badge badge-green">✓</span><div><div class="list-title">Encryption at rest + in transit</div><div class="list-meta">AES-256 at rest. TLS 1.3 in transit. Keys managed via dedicated KMS.</div></div></li>
+          <li class="list-item"><span class="badge badge-blue">i</span><div><div class="list-title">Retention policy</div><div class="list-meta">Email: indefinite. Transcripts: 7 years. Audit logs: 5 years. Configurable per source.</div></div></li>
+        </ul>
+      </div>
+    </div>
+
+  </main>
+</div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

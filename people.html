@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>People — Acme Corporation</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-active-nav="people.html">
+<div class="app">
+  <div id="sidebar-slot"></div>
+  <main class="main">
+    <div class="breadcrumb">Customers › People</div>
+    <div class="page-header">
+      <div class="page-title-group">
+        <h1>People Directory</h1>
+        <div class="page-subtitle">52,684 known people · Unified from email, calendar, CRM, and enrichment APIs · 11,041 with full profiles</div>
+      </div>
+      <div class="row-flex">
+        <button class="btn btn-secondary">Bulk enrich</button>
+        <button class="btn btn-primary">+ Add person</button>
+      </div>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="kpi-label">Total People</div><div class="kpi-value">52,684</div><div class="kpi-trend up">▲ 1,103 / 30d</div></div>
+      <div class="kpi-card"><div class="kpi-label">Champions</div><div class="kpi-value">2,847</div><div class="kpi-trend up">▲ 47 this Q</div></div>
+      <div class="kpi-card"><div class="kpi-label">Decision Makers (C-Level)</div><div class="kpi-value">418</div><div class="kpi-trend flat">Stable</div></div>
+      <div class="kpi-card"><div class="kpi-label">Dedup Candidates</div><div class="kpi-value">94</div><div class="kpi-trend down">▼ 12 awaiting review</div></div>
+    </div>
+
+    <div class="toolbar">
+      <div class="toolbar-left">
+        <input class="input" placeholder="Search by name, company, title, email…" style="min-width:380px" />
+        <select class="select"><option>All companies</option></select>
+        <select class="select"><option>All lifecycle stages</option><option>Champion</option><option>Active</option><option>At Risk</option><option>Dormant</option></select>
+        <select class="select"><option>All seniority</option><option>C-Level</option><option>VP+</option><option>Director</option><option>Manager</option></select>
+      </div>
+      <div class="toolbar-right muted text-sm">Sorted by engagement</div>
+    </div>
+
+    <div class="table-wrap">
+      <table class="table">
+        <thead>
+          <tr><th>Name</th><th>Title</th><th>Company</th><th>Lifecycle</th><th>Engagement</th><th class="num">Last contact</th><th>Owner</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Hannah Voss</strong><div class="text-xs muted">hannah.voss@northwind.example</div></td><td>Chief Procurement Officer</td><td>Northwind Industries</td><td><span class="badge badge-blue">Champion</span></td><td class="mono">94</td><td class="num">2 days ago</td><td>Sarah Johnson</td></tr>
+          <tr><td><strong>Carlos Mendez</strong><div class="text-xs muted">cmendez@helixlogistics.example</div></td><td>VP, Operations</td><td>Helix Logistics</td><td><span class="badge badge-blue">Champion</span></td><td class="mono">92</td><td class="num">Yesterday</td><td>Priya Patel</td></tr>
+          <tr><td><strong>Olivia Bryant</strong><div class="text-xs muted">olivia.bryant@auroratech.example</div></td><td>CTO</td><td>Aurora Technologies</td><td><span class="badge badge-blue">Champion</span></td><td class="mono">89</td><td class="num">3 days ago</td><td>Marcus Williams</td></tr>
+          <tr><td><strong>Aiden Walker</strong><div class="text-xs muted">aiden.walker@vanguardretail.example</div></td><td>SVP, Digital Operations</td><td>Vanguard Retail Co</td><td><span class="badge badge-blue">Champion</span></td><td class="mono">86</td><td class="num">3 days ago</td><td>Daniel Rodriguez</td></tr>
+          <tr><td><strong>Dr. Robert Patel</strong><div class="text-xs muted">rpatel@meridianhealth.example</div></td><td>Chief Medical Information Officer</td><td>Meridian Health Group</td><td><span class="badge badge-green">Active</span></td><td class="mono">82</td><td class="num">4 days ago</td><td>Emma Thompson</td></tr>
+          <tr><td><strong>Marcus Reeves</strong><div class="text-xs muted">marcus.reeves@whitestone.example</div></td><td>Chief Risk Officer</td><td>Whitestone Insurance</td><td><span class="badge badge-blue">Champion</span></td><td class="mono">81</td><td class="num">2 days ago</td><td>Sarah Johnson</td></tr>
+          <tr><td><strong>James Chen</strong><div class="text-xs muted">james.chen@crescentmedia.example</div></td><td>VP, Audience Development</td><td>Crescent Media</td><td><span class="badge badge-green">Active</span></td><td class="mono">79</td><td class="num">6 days ago</td><td>Lisa Park</td></tr>
+          <tr><td><strong>Linda Park</strong><div class="text-xs muted">lpark@riverbendfoods.example</div></td><td>VP, Trade Marketing</td><td>Riverbend Foods</td><td><span class="badge badge-green">Active</span></td><td class="mono">77</td><td class="num">1 week ago</td><td>Priya Patel</td></tr>
+          <tr><td><strong>Dr. William Hayes</strong><div class="text-xs muted">whayes@driftwoodpharma.example</div></td><td>SVP, Clinical Operations</td><td>Driftwood Pharmaceuticals</td><td><span class="badge badge-green">Active</span></td><td class="mono">76</td><td class="num">1 week ago</td><td>Sophia Nguyen</td></tr>
+          <tr><td><strong>Theresa Holm</strong><div class="text-xs muted">theresa.holm@globex.example</div></td><td>Chief Strategy Officer</td><td>Globex Corporation</td><td><span class="badge badge-green">Active</span></td><td class="mono">75</td><td class="num">2 weeks ago</td><td>Lisa Park</td></tr>
+          <tr><td><strong>Rebecca Hall</strong><div class="text-xs muted">rhall@summitenergy.example</div></td><td>VP, Digital Transformation</td><td>Summit Energy</td><td><span class="badge badge-green">Active</span></td><td class="mono">74</td><td class="num">5 days ago</td><td>Michael Santos</td></tr>
+          <tr><td><strong>Anita Krishnan</strong><div class="text-xs muted">anita.krishnan@cascadefin.example</div></td><td>VP, Strategic Sourcing</td><td>Cascade Financial</td><td><span class="badge badge-amber">At Risk</span></td><td class="mono">71</td><td class="num">2 weeks ago</td><td>Daniel Rodriguez</td></tr>
+          <tr><td><strong>Erika Schmidt</strong><div class="text-xs muted">erika.schmidt@polarismfg.example</div></td><td>Director, Procurement</td><td>Polaris Manufacturing</td><td><span class="badge badge-amber">At Risk</span></td><td class="mono">68</td><td class="num">3 weeks ago</td><td>Marcus Williams</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="toolbar" style="margin-top:16px">
+      <div class="muted text-sm">Showing 13 of 11,041 enriched profiles · 52,684 total</div>
+      <div class="toolbar-right"><button class="btn btn-ghost">Previous</button><button class="btn btn-secondary">Next</button></div>
+    </div>
+
+  </main>
+</div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Northwind Industries — Acme Corporation</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-active-nav="accounts.html">
+<div class="app">
+  <div id="sidebar-slot"></div>
+  <main class="main">
+    <div class="breadcrumb"><a href="accounts.html">Accounts</a> › Northwind Industries</div>
+    <div class="page-header">
+      <div class="page-title-group">
+        <h1>Northwind Industries</h1>
+        <div class="page-subtitle">Manufacturing · 12,400 employees · HQ: Hamburg · Owner: Sarah Johnson · Champion: Hannah Voss</div>
+      </div>
+      <div class="row-flex">
+        <button class="btn btn-secondary">Generate brief</button>
+        <button class="btn btn-primary">Draft outreach</button>
+      </div>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="kpi-label">Lifecycle stage</div><div class="kpi-value" style="font-size:18px;color:var(--accent-dark)">Champion</div><div class="kpi-trend flat">Since Mar 2024</div></div>
+      <div class="kpi-card"><div class="kpi-label">Engagement score</div><div class="kpi-value">94</div><div class="kpi-trend up">▲ 6 last 30d</div></div>
+      <div class="kpi-card"><div class="kpi-label">Open pipeline</div><div class="kpi-value">$3.2M</div><div class="kpi-trend up">▲ $400K QoQ</div></div>
+      <div class="kpi-card"><div class="kpi-label">Lifetime value</div><div class="kpi-value">$8.7M</div><div class="kpi-trend flat">2-year customer</div></div>
+    </div>
+
+    <div class="grid grid-2-3">
+      <div class="card">
+        <div class="card-header"><div class="card-title">Account timeline</div><span class="muted text-sm">Last 60 days</span></div>
+        <ul class="list-tight">
+          <li class="list-item"><span class="badge badge-green">Mar 17</span><div><div class="list-title">Renewal contract signed at 12% uplift</div><div class="list-meta">Multi-region data residency rider attached. Final stamp from legal teams both sides.</div></div></li>
+          <li class="list-item"><span class="badge badge-blue">Mar 14</span><div><div class="list-title">QBR — Hannah Voss, Daniel Marsh, Alex Chen</div><div class="list-meta">53-minute call. Key outcome: residency rider terms agreed. Audit-trail architecture review scheduled Apr 8.</div></div></li>
+          <li class="list-item"><span class="badge badge-grey">Mar 9</span><div><div class="list-title">Email thread — pricing alignment</div><div class="list-meta">Hannah confirmed 12% uplift acceptable contingent on residency language.</div></div></li>
+          <li class="list-item"><span class="badge badge-grey">Mar 5</span><div><div class="list-title">Internal note — Daniel Marsh sponsorship confirmed</div><div class="list-meta">EVP Operations signaled support via internal Slack channel.</div></div></li>
+          <li class="list-item"><span class="badge badge-grey">Feb 22</span><div><div class="list-title">Legal review request sent to internal counsel</div><div class="list-meta">Northwind procurement raised residency rider as gating issue.</div></div></li>
+          <li class="list-item"><span class="badge badge-grey">Feb 14</span><div><div class="list-title">Discovery call — APAC expansion scope</div><div class="list-meta">Hannah raised possibility of extending to two additional regions in 2027.</div></div></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><div class="card-title">Stakeholders</div></div>
+        <ul class="list-tight">
+          <li class="list-item"><div class="avatar" style="background:linear-gradient(135deg,#2563eb,#1e40af)">HV</div><div><div class="list-title">Hannah Voss</div><div class="list-meta">Chief Procurement Officer · Champion · 14 interactions</div></div></li>
+          <li class="list-item"><div class="avatar" style="background:linear-gradient(135deg,#059669,#047857)">DM</div><div><div class="list-title">Daniel Marsh</div><div class="list-meta">EVP Operations · Executive Sponsor · 6 interactions</div></div></li>
+          <li class="list-item"><div class="avatar" style="background:linear-gradient(135deg,#d97706,#b45309)">LR</div><div><div class="list-title">Laura Reinhardt</div><div class="list-meta">Director of Data Governance · DPO contact · 9 interactions</div></div></li>
+          <li class="list-item"><div class="avatar" style="background:linear-gradient(135deg,#7c3aed,#5b21b6)">MT</div><div><div class="list-title">Marco Theiler</div><div class="list-meta">Head of EMEA Operations · Technical buyer · 4 interactions</div></div></li>
+          <li class="list-item"><div class="avatar" style="background:linear-gradient(135deg,#dc2626,#991b1b)">SK</div><div><div class="list-title">Sven Kohler</div><div class="list-meta">Legal Counsel · Reviewer · 3 interactions</div></div></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-gap card">
+      <div class="card-header"><div class="card-title">AI-generated account summary</div><span class="badge badge-blue">Regenerated 8 min ago</span></div>
+      <div style="font-size:13.5px;line-height:1.7;color:var(--ink-2)">
+        Northwind Industries is a strong renewal account with a clear champion (Hannah Voss, CPO) and an active executive sponsor (Daniel Marsh, EVP Operations). The 2026 renewal closed at a 12% uplift, contingent on a multi-region data residency rider — driven by EU GDPR concerns flagged in Q4 2025 and reinforced by the recent EU Commission review. Open commitments include (1) a technical architecture review for the residency audit trail by April 8, and (2) a quarterly executive review cadence starting Q2.
+        <br><br>
+        Two expansion signals to monitor: Hannah raised APAC expansion scope in the February 14 discovery call (estimated $1.2M opportunity), and Marco Theiler indicated EMEA operations may consolidate to our platform if the residency architecture passes their DPO review. Risk factors: Sven Kohler in legal has flagged liability language as something he'll want to revisit at the Q3 cadence point.
+      </div>
+    </div>
+
+  </main>
+</div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

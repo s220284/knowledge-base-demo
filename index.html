@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — Acme Corporation Knowledge Base</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-active-nav="index.html">
+<div class="app">
+  <div id="sidebar-slot"></div>
+  <main class="main">
+    <div class="breadcrumb">Workspace › Dashboard</div>
+    <div class="page-header">
+      <div class="page-title-group">
+        <h1>Good afternoon, Alex</h1>
+        <div class="page-subtitle">Tuesday, March 18 · 7 stories in this morning's brief · 23 new activities across your accounts</div>
+      </div>
+      <div class="row-flex">
+        <button class="btn btn-secondary">Export</button>
+        <button class="btn btn-primary">+ Ask the Knowledge Base</button>
+      </div>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-label">Active Accounts</div>
+        <div class="kpi-value">147</div>
+        <div class="kpi-trend up">▲ 6 this quarter</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">People in Universe</div>
+        <div class="kpi-value">52,684</div>
+        <div class="kpi-trend up">▲ 1,103 last 30 days</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Pipeline Value</div>
+        <div class="kpi-value">$42.8M</div>
+        <div class="kpi-trend up">▲ 14% QoQ</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">KB Queries This Week</div>
+        <div class="kpi-value">1,847</div>
+        <div class="kpi-trend up">▲ 22% WoW</div>
+      </div>
+    </div>
+
+    <div class="grid grid-2-3">
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="card-title">Today's Executive Brief</div>
+            <div class="card-subtitle">Generated automatically at 6:00 AM ET</div>
+          </div>
+          <a href="brief.html" class="card-link">View full brief →</a>
+        </div>
+        <ul class="list-tight">
+          <li class="list-item">
+            <span class="badge badge-blue">Account</span>
+            <div>
+              <div class="list-title">Northwind Industries renewed their annual contract at 12% uplift</div>
+              <div class="list-meta">Decision logged in Tuesday's QBR. Expansion conversations on data residency began this morning. Next touchpoint: Apr 8.</div>
+            </div>
+          </li>
+          <li class="list-item">
+            <span class="badge badge-amber">Risk</span>
+            <div>
+              <div class="list-title">Brightwater Partners has not replied to three outreach attempts</div>
+              <div class="list-meta">Last engagement Feb 22. Sentiment trending negative across two transcripts. Recommended action: executive sponsor outreach.</div>
+            </div>
+          </li>
+          <li class="list-item">
+            <span class="badge badge-green">Win</span>
+            <div>
+              <div class="list-title">Helix Logistics signed $1.2M Series B procurement deal</div>
+              <div class="list-meta">Champion: Priya Patel. Source: Sales Engineering team. Reference call available on request.</div>
+            </div>
+          </li>
+          <li class="list-item">
+            <span class="badge badge-blue">Industry</span>
+            <div>
+              <div class="list-title">Three competitors announced AI assistant features this week</div>
+              <div class="list-meta">Detailed teardowns and positioning notes available in the Industry Watch section.</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">Recent Knowledge Base Activity</div>
+          <a href="chat.html" class="card-link">Ask a question →</a>
+        </div>
+        <ul class="list-tight">
+          <li class="list-item">
+            <span class="badge badge-grey">Alex</span>
+            <div>
+              <div class="list-title">"What was discussed in the Polaris Manufacturing pricing call?"</div>
+              <div class="list-meta">8 min ago · 4 sources</div>
+            </div>
+          </li>
+          <li class="list-item">
+            <span class="badge badge-grey">Sarah</span>
+            <div>
+              <div class="list-title">"Summarize Northwind's Q1 escalation history"</div>
+              <div class="list-meta">42 min ago · 11 sources</div>
+            </div>
+          </li>
+          <li class="list-item">
+            <span class="badge badge-grey">Marcus</span>
+            <div>
+              <div class="list-title">"Who else at Brightwater have we engaged?"</div>
+              <div class="list-meta">2 hours ago · 7 sources</div>
+            </div>
+          </li>
+          <li class="list-item">
+            <span class="badge badge-grey">Priya</span>
+            <div>
+              <div class="list-title">"Draft a follow-up email for the Aurora demo"</div>
+              <div class="list-meta">3 hours ago · 5 sources</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-gap grid grid-2">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">Pipeline by Stage</div>
+          <a href="accounts.html" class="card-link">View accounts →</a>
+        </div>
+        <div class="bar-chart">
+          <div class="bar" style="height:30%"></div>
+          <div class="bar" style="height:55%"></div>
+          <div class="bar" style="height:78%"></div>
+          <div class="bar" style="height:62%"></div>
+          <div class="bar" style="height:88%"></div>
+          <div class="bar" style="height:42%"></div>
+        </div>
+        <div class="bar-labels">
+          <span>Identified</span>
+          <span>Qualified</span>
+          <span>Discovery</span>
+          <span>Proposal</span>
+          <span>Negotiation</span>
+          <span>Closed</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">Engagement Health</div>
+          <a href="cdp.html" class="card-link">CDP →</a>
+        </div>
+        <div class="donut-wrap">
+          <div class="donut"><div class="donut-inner">68%</div></div>
+          <div class="donut-legend">
+            <div><span class="legend-dot" style="background:var(--accent)"></span> Champion (42%)</div>
+            <div><span class="legend-dot" style="background:var(--success)"></span> Active (26%)</div>
+            <div><span class="legend-dot" style="background:var(--warning)"></span> At Risk (16%)</div>
+            <div><span class="legend-dot" style="background:var(--ink-3)"></span> Dormant (16%)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Email Drafts — Acme Corporation</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-active-nav="drafts.html">
+<div class="app">
+  <div id="sidebar-slot"></div>
+  <main class="main">
+    <div class="breadcrumb">Operations › Email Drafts</div>
+    <div class="page-header">
+      <div class="page-title-group">
+        <h1>AI-Generated Email Drafts</h1>
+        <div class="page-subtitle">Drafted from CRM signals · Grounded in your voice · Reviewed by you before send</div>
+      </div>
+      <div class="row-flex">
+        <button class="btn btn-secondary">Run draft job</button>
+      </div>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="kpi-label">Drafts in Queue</div><div class="kpi-value">23</div><div class="kpi-trend up">▲ 8 this morning</div></div>
+      <div class="kpi-card"><div class="kpi-label">Sent This Week</div><div class="kpi-value">147</div><div class="kpi-trend up">▲ 22 over last week</div></div>
+      <div class="kpi-card"><div class="kpi-label">Reply Rate</div><div class="kpi-value">38%</div><div class="kpi-trend up">▲ 6 pts vs control</div></div>
+      <div class="kpi-card"><div class="kpi-label">Avg Time-to-Send</div><div class="kpi-value">4.2m</div><div class="kpi-trend down">▼ from 12m manually</div></div>
+    </div>
+
+    <div class="grid grid-2-3">
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="card-title">Draft preview — Polaris Manufacturing escalation</div>
+            <div class="card-subtitle">To: Erika Schmidt · Director, Procurement · Generated 14 min ago</div>
+          </div>
+          <span class="badge badge-blue">Awaiting review</span>
+        </div>
+        <div style="background:var(--surface-2);border-radius:var(--radius-sm);padding:18px 20px;font-size:13.5px;line-height:1.7;color:var(--ink)">
+          <strong>Subject:</strong> Following up on the indemnity language — small idea<br><br>
+          Hi Erika,<br><br>
+          I wanted to follow up on the open items your legal team raised on Section 14 (indemnity scope). Our counsel and yours have been trading versions for about three weeks now and I think there's a simpler path that may work for both sides.<br><br>
+          What if we anchored the indemnity to a mutual carve-out (gross negligence and willful misconduct, capped at insurance limits) and treated the IP-warranty piece in a separate side letter? That structure has worked for two of our other manufacturing-sector renewals in Q1 and may let us close out the legal review this week without further round-trips.<br><br>
+          If helpful, I can have our counsel send a revised redline this afternoon. Happy to also set up a 20-minute call with both legal teams if you'd prefer to talk it through live.<br><br>
+          Best,<br>
+          Sarah
+          <div class="msg-citations" style="margin-top:14px">
+            <span class="citation">📄 Polaris MSA · Section 14</span>
+            <span class="citation">📧 Erika's last reply · Mar 11</span>
+            <span class="citation">📄 Crescent Media side letter (template)</span>
+            <span class="citation">🎙 Internal legal sync · Mar 16</span>
+          </div>
+        </div>
+        <div class="row-flex" style="margin-top:14px">
+          <button class="btn btn-primary">Approve & send</button>
+          <button class="btn btn-secondary">Edit</button>
+          <button class="btn btn-ghost">Regenerate</button>
+          <span class="spacer"></span>
+          <span class="text-sm muted">Confidence: 92% · Voice match: 0.89</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><div class="card-title">Draft queue</div></div>
+        <ul class="list-tight">
+          <li class="list-item active"><span class="badge badge-blue">High</span><div><div class="list-title">Polaris escalation → Erika Schmidt</div><div class="list-meta">Currently viewing</div></div></li>
+          <li class="list-item"><span class="badge badge-blue">High</span><div><div class="list-title">Brightwater save-motion → Sponsor</div><div class="list-meta">Generated 28 min ago</div></div></li>
+          <li class="list-item"><span class="badge badge-green">Med</span><div><div class="list-title">Northwind architecture review prep → Hannah</div><div class="list-meta">For Apr 8 meeting</div></div></li>
+          <li class="list-item"><span class="badge badge-green">Med</span><div><div class="list-title">Aurora competitive teardown follow-up</div><div class="list-meta">3 prospects</div></div></li>
+          <li class="list-item"><span class="badge badge-grey">Low</span><div><div class="list-title">Helix Logistics — reference call request</div><div class="list-meta">For Globex prospect call</div></div></li>
+          <li class="list-item"><span class="badge badge-grey">Low</span><div><div class="list-title">Q1 board prep distribution</div><div class="list-meta">14 internal recipients</div></div></li>
+        </ul>
+      </div>
+    </div>
+
+  </main>
+</div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

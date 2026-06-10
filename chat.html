@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Knowledge Base — Acme Corporation</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-active-nav="chat.html">
+<div class="app">
+  <div id="sidebar-slot"></div>
+  <main class="main">
+    <div class="breadcrumb">Workspace › Knowledge Base</div>
+    <div class="page-header">
+      <div class="page-title-group">
+        <h1>Knowledge Base</h1>
+        <div class="page-subtitle">Ask anything across email, transcripts, CRM activity, contracts, and documents. Every answer is grounded in sources.</div>
+      </div>
+      <div class="row-flex">
+        <button class="btn btn-secondary">+ New conversation</button>
+      </div>
+    </div>
+
+    <div class="chat-wrap">
+      <div class="chat-main">
+        <div class="chat-messages" id="chat-messages">
+
+          <div class="msg user">
+            <div class="msg-avatar">AC</div>
+            <div class="msg-body">What was the outcome of the Northwind Industries Q1 contract negotiation, and who is the current champion on their side?</div>
+          </div>
+
+          <div class="msg ai">
+            <div class="msg-avatar">KB</div>
+            <div class="msg-body">
+              Northwind Industries renewed their annual contract on <strong>March 14, 2026</strong> at a 12% uplift over the prior term, with the addition of a multi-region data residency rider. The renewal was led by their <strong>Chief Procurement Officer, Hannah Voss</strong>, with sponsorship from <strong>EVP Operations, Daniel Marsh</strong>.
+              <br><br>
+              The current champion is Hannah Voss. She has driven three of the last four major decisions for Northwind, including the original 2024 onboarding and the 2025 expansion to APAC. Her engagement score in the CDP is currently 87 (top decile).
+              <br><br>
+              Open items from the negotiation: (1) a 30-day SLA addendum to be finalized in April, (2) a quarterly executive review cadence starting Q2.
+              <div class="msg-citations">
+                <span class="citation">📄 Contract — Northwind Annual Renewal 2026</span>
+                <span class="citation">🎙 QBR Transcript · Mar 14</span>
+                <span class="citation">📧 Email thread — Voss / Marsh · Mar 9</span>
+                <span class="citation">📊 CDP profile — Hannah Voss</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="msg user">
+            <div class="msg-avatar">AC</div>
+            <div class="msg-body">What did Hannah say specifically about the data residency rider?</div>
+          </div>
+
+          <div class="msg ai">
+            <div class="msg-avatar">KB</div>
+            <div class="msg-body">
+              From the March 14 QBR transcript, Hannah Voss said: <em>"The data residency piece is non-negotiable for the EU operating units. We need clean separation of EMEA-originated data with audit trails we can hand to our DPO. The commercial uplift is fine if the technical architecture is solid."</em>
+              <br><br>
+              She followed up two days later in writing (Mar 16 email) reiterating the audit-trail requirement and asking for a technical architecture review by April 8. Daniel Marsh seconded the audit-trail concern and added that Northwind's legal team would want the rider language reviewed before signature.
+              <div class="msg-citations">
+                <span class="citation">🎙 QBR Transcript · Mar 14 · 00:23:15</span>
+                <span class="citation">📧 Voss → Marsh · Mar 16</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="chat-input-bar">
+          <input type="text" class="chat-input" id="chat-input" placeholder="Ask anything — e.g., 'Summarize the Polaris Manufacturing renewal risk'">
+          <button class="btn btn-primary">Send</button>
+        </div>
+      </div>
+
+      <div class="chat-side">
+        <div class="card">
+          <div class="card-title">Recent conversations</div>
+          <div class="history-item active">Northwind Industries Q1 negotiation</div>
+          <div class="history-item">Polaris Manufacturing renewal risk</div>
+          <div class="history-item">Brightwater outreach history</div>
+          <div class="history-item">Aurora demo follow-up draft</div>
+          <div class="history-item">Helix Logistics champion map</div>
+          <div class="history-item">Q1 board prep summary</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Suggested questions</div>
+          <div class="history-item">"Who at Brightwater have we engaged in the last 90 days?"</div>
+          <div class="history-item">"Summarize all activity for Crescent Media this quarter"</div>
+          <div class="history-item">"Find every email mentioning the EU data residency requirement"</div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
